@@ -99,7 +99,7 @@ public class Service1 extends Service
         inflater = LayoutInflater.from(getApplication());
         mFloatLayout = (LinearLayout) inflater.inflate(R.layout.float_layout, null);
         mWindowManager.addView(mFloatLayout, wmParams);
-        mFloatView = (ImageButton)mFloatLayout.findViewById(R.id.float_id);
+        mFloatView = mFloatLayout.findViewById(R.id.float_id);
 
         mFloatLayout.measure(View.MeasureSpec.makeMeasureSpec(0,
                 View.MeasureSpec.UNSPECIFIED), View.MeasureSpec
